@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="b1bg" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#1F4F9C"/>
+      <stop offset="50%" stop-color="#3A6FB8"/>
+      <stop offset="100%" stop-color="#15396E"/>
+    </linearGradient>
+    <linearGradient id="b1stroke" x1="0" x2="1" y1="0" y2="0">
+      <stop offset="0%" stop-color="#AFCA0B" stop-opacity="0"/>
+      <stop offset="40%" stop-color="#AFCA0B"/>
+      <stop offset="100%" stop-color="#AFCA0B" stop-opacity="0.3"/>
+    </linearGradient>
+    <radialGradient id="b1glow" cx="50%" cy="50%">
+      <stop offset="0%" stop-color="#AFCA0B" stop-opacity="0.35"/>
+      <stop offset="100%" stop-color="#AFCA0B" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#b1bg)"/>
+  <circle cx="600" cy="180" r="180" fill="url(#b1glow)"/>
+  <!-- Flowing motion lines -->
+  <g stroke="url(#b1stroke)" stroke-width="2.5" fill="none" stroke-linecap="round">
+    <path d="M -20 360 Q 200 200 400 280 T 820 240" opacity="0.85"/>
+    <path d="M -20 400 Q 220 250 420 330 T 820 290" opacity="0.65"/>
+    <path d="M -20 320 Q 180 180 380 230 T 820 200" opacity="0.5"/>
+    <path d="M -20 280 Q 200 170 400 200 T 820 170" opacity="0.35"/>
+  </g>
+  <!-- Lime accent particles along motion -->
+  <g fill="#AFCA0B">
+    <circle cx="180" cy="270" r="4"/>
+    <circle cx="320" cy="232" r="5"/>
+    <circle cx="450" cy="278" r="3.5"/>
+    <circle cx="580" cy="252" r="4.5"/>
+    <circle cx="700" cy="220" r="3"/>
+  </g>
+  <!-- Glowing dots -->
+  <g fill="#FFFFFF" opacity="0.6">
+    <circle cx="120" cy="430" r="1.5"/>
+    <circle cx="240" cy="140" r="1.2"/>
+    <circle cx="480" cy="120" r="2"/>
+    <circle cx="660" cy="400" r="1.5"/>
+    <circle cx="380" cy="450" r="1.2"/>
+  </g>
+  <!-- Stylized human silhouette in motion -->
+  <g fill="#AFCA0B" opacity="0.95" transform="translate(360 200)">
+    <circle cx="0" cy="-10" r="14"/>
+    <path d="M -22 10 Q -10 20 0 18 Q 10 16 22 8 L 18 25 Q 8 35 0 38 Q -8 35 -18 25 Z"/>
+    <path d="M -10 38 L -16 90 L -8 92 L -2 50 L 2 50 L 8 92 L 16 90 L 10 38 Z"/>
+    <path d="M -22 10 Q -32 30 -28 60 L -22 58 Q -18 35 -14 18 Z"/>
+    <path d="M 22 8 Q 34 18 38 42 L 32 44 Q 28 25 18 14 Z"/>
+  </g>
+</svg>
