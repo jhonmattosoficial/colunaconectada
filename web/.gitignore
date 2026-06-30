@@ -1,6 +1,5 @@
 node_modules
 .next
-out
 .env*.local
 .env
 *.tsbuildinfo
@@ -10,3 +9,7 @@ next-env.d.ts
 
 # Backup local de imagens originais (geradas pelo optimize-images.mjs)
 public/img.original
+
+# IMPORTANTE: /out NÃO está gitignored — é o output do static export que
+# a Hostinger puxa via Auto Deploy do Git pra servir como site.
+# Roda `npm run build` antes de cada commit que mexer em código/imagens.
