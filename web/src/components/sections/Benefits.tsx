@@ -187,14 +187,13 @@ function BenefitCard({
           aria-hidden="true"
           className={`absolute inset-0 bg-gradient-to-br ${visual.gradient}`}
         />
-        {/* SVG illustration camada por cima do gradient. PNGs Higgsfield foram removidos
-            (pesados demais pra static export). Pra reativar: drop /public/img/benefit-N.png
-            e adicione `url("${visual.basePath}.png"),` na frente do url() abaixo. */}
+        {/* Camadas: JPG (Antigravity geradas) por cima → fallback SVG embaixo se faltar.
+            Browser pula o JPG silenciosamente se 404 e mostra o SVG. */}
         <div
           aria-hidden="true"
           className="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-105"
           style={{
-            backgroundImage: `url("${visual.basePath}.svg")`,
+            backgroundImage: `url("${visual.basePath}.jpg"), url("${visual.basePath}.svg")`,
           }}
         />
         {/* Subtle grain */}

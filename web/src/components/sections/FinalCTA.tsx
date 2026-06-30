@@ -25,7 +25,7 @@ export function FinalCTA() {
       {/* Background photo — ambiente da clínica em opacidade baixa */}
       <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
         <Image
-          src="/img/hero/hero-3.jpg"
+          src="/img/hero/hero-desktop.jpg"
           alt=""
           fill
           sizes="100vw"
