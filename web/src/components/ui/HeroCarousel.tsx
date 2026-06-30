@@ -13,7 +13,7 @@ export function HeroCarousel() {
     <div className="absolute inset-0 z-0 overflow-hidden" aria-hidden="true">
       {/* Mobile (< md) — object-top anchors the people to the top, leaving the bottom blue gradient for text */}
       <Image
-        src="/img/hero/hero-mobile.png"
+        src="/img/hero/hero-mobile.jpg"
         alt=""
         fill
         sizes="(max-width: 767px) 100vw, 0px"
@@ -23,7 +23,7 @@ export function HeroCarousel() {
       />
       {/* Desktop (>= md) */}
       <Image
-        src="/img/hero/hero-desktop.png"
+        src="/img/hero/hero-desktop.jpg"
         alt=""
         fill
         sizes="(min-width: 768px) 100vw, 0px"
