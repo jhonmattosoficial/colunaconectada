@@ -10,7 +10,7 @@ export const brand = {
   subhead:
     "Seu corpo não está quebrado. Ele está sobrecarregado, compensando e pedindo ajuda há algum tempo.",
   whatsapp:
-    "https://api.whatsapp.com/send?phone=5513997171708&text=Olá! Quero agendar minha avaliação na Coluna Conectada.",
+    "https://api.whatsapp.com/send?phone=5513997368867&text=Olá! Quero agendar minha avaliação na Coluna Conectada.",
 };
 
 export const ctaText = "Quero agendar minha avaliação na Coluna Conectada";
